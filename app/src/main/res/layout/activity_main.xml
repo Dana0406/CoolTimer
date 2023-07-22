@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/timerSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_marginTop="16dp"
+        android:thumbTint="@color/yellow"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/bell"
+        android:layout_below="@+id/timerSeekBar">
+
+        <TextView
+            android:id="@+id/TimerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="00:30"
+            android:textColor="@color/black"
+            android:textSize="64sp" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:onClick="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/TimerTextView"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="@color/purple_500"
+            android:padding="16dp"
+            android:text="START"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
